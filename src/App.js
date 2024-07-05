@@ -1,10 +1,11 @@
 import './App.css';
-import EditForm from "./components/EditPage/EditForm"
+import EditForm from "./components/pages/EditPage/EditForm"
 
 function App() {
   return (
     <div className="App">
       <EditForm/>
+      
     </div>
   );
 }

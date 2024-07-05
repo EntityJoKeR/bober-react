@@ -1,15 +1,15 @@
 import React from "react"
-import DateInput from "./DateInput/DateInput"
-import TimeInput from "./TimeInput/TimeInput"
+import "./EditForm.css"
+import DateInput from "../../ui/inputs/DateInput/DateInput"
+import TimeInput from "../../ui/inputs/TimeInput/TimeInput"
 
 
 function EditForm(props) {
     const [startDate, setStartDate] = React.useState()
 
     return(
-        <div>
+        <div className="edit-form">
             <DateInput/>
-            <TimeInput/>
         </div>
     )
 }
