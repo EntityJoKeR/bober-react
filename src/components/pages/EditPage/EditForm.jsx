@@ -1,5 +1,5 @@
 import React from "react"
-import "./EditForm.css"
+import classes from "./EditForm.module.css"
 import DateInput from "../../ui/inputs/DateInput/DateInput"
 import TimeInput from "../../ui/inputs/TimeInput/TimeInput"
 import FileInput from "../../ui/inputs/FileInput/FileInput"
@@ -19,50 +19,50 @@ function EditForm(props) {
     }
 
     return(
-        <div className="edit-form">
+        <div className={classes.editForm}>
             <form>
-                <div className="photo">
-                    <div className="img"></div>
+                <div className={classes.photo}>
+                    <div className={classes.img}></div>
                     <FileInput file={file} setFile={setFile}/>
                 </div>
-                <div className="event-datetime">
-                    <div className="event-start">
+                <div className={classes.eventDatetime}>
+                    <div className={classes.eventStart}>
                         <p>Начало мероприятия</p>
                         <DateInput /><TimeInput/>
                     </div>
-                    <div className="event-end">
+                    <div className={classes.eventEnd}>
                         <p>Конец мероприятия</p>
                         <DateInput /><TimeInput/>
                     </div>
-                    <div className="event-name">
+                    <div className={classes.eventName}>
                         <p>Название мероприятия</p>
                         <input type="text" value={name} onInput={event => setName(event.target.value)}/>
                     </div>
-                    <div className="event-description">
+                    <div className={classes.eventDescription}>
                         <p>Описание мероприятия</p>
                         <textarea onInput={event => setDescription(event.target.value)}></textarea>
                     </div>
-                    <div className="event-link">
+                    <div className={classes.eventLink}>
                         <p>Ссылка</p>
                         <input type="text" value={link} onInput={event => setLink(event.target.value)}/>
                     </div>
-                    <div className="services">
-                        <div className="service-item">
+                    <div className={classes.services}>
+                        <div className={classes.serviceItem}>
                             <p>Добавить услугу</p>
                             <ServiceInput/>
                             <button onClick={addService}>Добавить</button>
                         </div>
                     </div>
-                    <div className="bottom">
-                        <div className="price">
+                    <div className={classes.bottom}>
+                        <div className={classes.price}>
                             <p>Цена</p>
                             <input type="text" value={price} onInput={event => setName(event.target.value)}/>
                         </div>
-                        <div className="author">
+                        <div className={classes.author}>
                             <p>Автор</p>
                             <input type="text" value={author} onInput={event => setAuthor(event.target.value)}/>
                         </div>
-                        <div className="buttons">
+                        <div className={classes.buttons}>
                             <button type="submit">Отправить</button>
                             <button type="reset">Очистить</button>
                         </div>

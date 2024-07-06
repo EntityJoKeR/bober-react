@@ -1,0 +1,73 @@
+.editForm{
+    position: absolute;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: aquamarine;
+    max-width: 480px;
+    width: 480px;
+    padding: 15px;
+    
+}
+
+.photo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.img{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+
+.eventDatetime{
+
+}
+
+.eventStart{
+
+}
+
+.eventEnd{
+
+}
+
+.eventName{
+
+}
+
+.eventDescription{
+
+}
+
+.eventLink{
+
+}
+
+.eventServices{
+
+}
+
+.serviceItem{
+
+}
+
+.bottom{
+
+}
+
+.price{
+
+}
+
+.author{
+
+}
+
+.buttons{
+    
+}

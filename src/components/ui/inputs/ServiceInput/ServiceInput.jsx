@@ -1,12 +1,12 @@
 import React from "react"
-import "./ServiceInput.css"
+import classes from "./ServiceInput.module.css"
 
 
 function ServiceInput() {
     return(
         <div>
-            <input className="service-input service-input--name" type="text" placeholder="Название"></input>
-            <input className="service-input service-input--price" type="text" placeholder="Цена"></input>
+            <input className={classes.serviceInput} type="text" placeholder="Название"></input>
+            <input className={classes.serviceInput} type="text" placeholder="Цена"></input>
         </div>
         
     )
