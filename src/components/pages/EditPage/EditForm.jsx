@@ -54,11 +54,11 @@ function EditForm(props) {
                         </div>
                     </div>
                     <div className="bottom">
-                        <div className="price-input">
+                        <div className="price">
                             <p>Цена</p>
                             <input type="text" value={price} onInput={event => setName(event.target.value)}/>
                         </div>
-                        <div className="author-input">
+                        <div className="author">
                             <p>Автор</p>
                             <input type="text" value={author} onInput={event => setAuthor(event.target.value)}/>
                         </div>
