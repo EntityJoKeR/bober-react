@@ -28,19 +28,24 @@ function EditForm(props) {
                 <div className={classes.eventDatetime}>
                     <div className={classes.eventStart}>
                         <p>Начало мероприятия</p>
-                        <DateInput /><TimeInput/>
+                        <div className={classes.datetimeInputs}>
+                            <DateInput /><TimeInput/>
+                        </div>
                     </div>
                     <div className={classes.eventEnd}>
                         <p>Конец мероприятия</p>
-                        <DateInput /><TimeInput/>
+                        <div className={classes.datetimeInputs}>
+                            <DateInput /><TimeInput/>
+                        </div>
                     </div>
+                </div>
                     <div className={classes.eventName}>
                         <p>Название мероприятия</p>
                         <input type="text" value={name} onInput={event => setName(event.target.value)}/>
                     </div>
                     <div className={classes.eventDescription}>
                         <p>Описание мероприятия</p>
-                        <textarea onInput={event => setDescription(event.target.value)}></textarea>
+                        <textarea className={classes.eventDescriptionArea} onInput={event => setDescription(event.target.value)}></textarea>
                     </div>
                     <div className={classes.eventLink}>
                         <p>Ссылка</p>
@@ -50,8 +55,8 @@ function EditForm(props) {
                         <div className={classes.serviceItem}>
                             <p>Добавить услугу</p>
                             <ServiceInput/>
-                            <button onClick={addService}>Добавить</button>
                         </div>
+                        <button className={classes.addServiceButton} onClick={addService}>Добавить</button>
                     </div>
                     <div className={classes.bottom}>
                         <div className={classes.price}>
@@ -67,7 +72,6 @@ function EditForm(props) {
                             <button type="reset">Очистить</button>
                         </div>
                     </div>
-                </div>
             </form>
         </div>
     )

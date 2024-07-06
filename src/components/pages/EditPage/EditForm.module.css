@@ -1,3 +1,8 @@
+p{
+    margin: 0 0;
+    margin-bottom: 5px;
+}
+
 .editForm{
     position: absolute;
     margin: 10px auto;
@@ -9,13 +14,15 @@
     width: 480px;
     padding: 15px;
     
+    
 }
 
 .photo{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .img{
@@ -24,12 +31,24 @@
     background-color: black;
 }
 
-.eventDatetime{
-
+.datetimeInputs{
+    display: flex;
+    gap: 0 10px;
+    
 }
 
-.eventStart{
+.eventDatetime{
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0;
+    margin-bottom: 20px;
+}
 
+
+.eventStart{
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .eventEnd{
@@ -37,27 +56,47 @@
 }
 
 .eventName{
-
+    margin-bottom: 20px;
 }
 
 .eventDescription{
+    margin-bottom: 20px;
+}
 
+.eventDescriptionArea{
+    resize: vertical;
+    max-height: 300px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .eventLink{
-
+    margin-bottom: 20px;
 }
 
-.eventServices{
-
+.services{
+    margin-bottom: 20px;
+    flex-direction: column;
 }
 
 .serviceItem{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    gap: 0px 10px;
+}
 
+.addServiceButton{
+    border: none;
+    padding: 5px;
 }
 
 .bottom{
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0 10px;
+    justify-content: space-between;
 }
 
 .price{
@@ -69,5 +108,10 @@
 }
 
 .buttons{
-    
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
 }
+
