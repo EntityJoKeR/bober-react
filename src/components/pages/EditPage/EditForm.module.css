@@ -127,3 +127,14 @@ input, textarea{
     width: 100%;
 }
 
+.buttonSubmit{
+    background-color: #50C0FF;
+    border: none;
+}
+
+.buttonReset{
+    color: red;
+    background-color: inherit;
+    border: none;
+}
+

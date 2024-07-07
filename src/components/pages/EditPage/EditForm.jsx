@@ -69,8 +69,8 @@ function EditForm(props) {
                         </div>
                     </div>
                         <div className={classes.buttons}>
-                            <button type="submit">Отправить</button>
-                            <button type="reset">Очистить</button>
+                            <button className={classes.buttonSubmit} type="button">Применить</button>
+                            <button className={classes.buttonReset} type="reset">Отмена</button>
                         </div>
             </form>
         </div>
