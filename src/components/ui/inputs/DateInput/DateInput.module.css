@@ -1,7 +1,12 @@
 .dateInput{
-    
+    background-color: #414547;
+    width: 50px;
+    border: none;
 }
 
-.dateInputInner{
-    
+.dateInput{
+    /* background-color: #414547; */
+    border: none;
+    color: white;
+    /* width: 10px; */
 }

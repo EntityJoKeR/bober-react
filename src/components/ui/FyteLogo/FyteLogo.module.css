@@ -1,0 +1,10 @@
+.logo {
+    fill: var(--color-heading);
+    stroke: var(--color-heading);
+}
+
+.div{
+    width: 20px;
+    height: 20px;
+    background-color: aquamarine;
+}

@@ -67,11 +67,11 @@ function EditForm(props) {
                             <p>Автор</p>
                             <input type="text" value={author} onInput={event => setAuthor(event.target.value)}/>
                         </div>
+                    </div>
                         <div className={classes.buttons}>
                             <button type="submit">Отправить</button>
                             <button type="reset">Очистить</button>
                         </div>
-                    </div>
             </form>
         </div>
     )

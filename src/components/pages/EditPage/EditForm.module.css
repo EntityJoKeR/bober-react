@@ -1,18 +1,28 @@
 p{
     margin: 0 0;
     margin-bottom: 5px;
+    color: rgba(255, 255, 255, 0.5);
 }
 
+input, textarea{
+    color: white;
+    background-color: #414547;
+}
+
+
+
 .editForm{
-    position: absolute;
-    margin: 10px auto;
+
+    margin: 30px auto;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    background-color: aquamarine;
-    max-width: 480px;
-    width: 480px;
+    background-color: rgba(66, 70, 72, 30%);
+
+    /* width: 480px; */
     padding: 15px;
+    border-radius: 30px;
+    overflow: hidden;
     
     
 }
@@ -34,7 +44,8 @@ p{
 .datetimeInputs{
     display: flex;
     gap: 0 10px;
-    
+    color: white;
+    justify-content: space-between;
 }
 
 .eventDatetime{
@@ -48,6 +59,7 @@ p{
 .eventStart{
     display: flex;
     flex-direction: column;
+    
     
 }
 
@@ -94,7 +106,7 @@ p{
 .bottom{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 0 10px;
     justify-content: space-between;
 }
