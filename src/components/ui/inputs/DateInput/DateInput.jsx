@@ -8,9 +8,9 @@ function DateInput() {
     const [selectedDate, setDate] = React.useState(null)
 
     return(
-        <div className={classes.dateInput}>
+        <div wrapperClassName={classes.dateInputContainer}>
             <DatePicker
-                    className={classes.dateInputInner}
+                    wrapperClassName={classes.dateInput}
                     selected={selectedDate}
                     onChange={date => {setDate(date); console.log(date)}}
                     dateFormat="Дата:  dd.MM.yyyy"

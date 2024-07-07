@@ -6,7 +6,7 @@ import classes from "./TimeInput.module.css"
 function TimeInput() {
     const [selectedTime, setTime] = React.useState(null)
     return(
-        <div className={classes.timeInput}>
+        <div wrapperClassName={classes.timeInput}>
             <DatePicker
                     className={classes.timeInputInner}
                     selected={selectedTime}

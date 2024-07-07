@@ -18,10 +18,8 @@ input, textarea{
     flex-direction: column;
     flex-wrap: nowrap;
     background-color: rgba(66, 70, 72, 30%);
-
-    /* width: 480px; */
     padding: 15px;
-    border-radius: 30px;
+    border-radius: 30px 5px 30px 5px;
     overflow: hidden;
     
     
@@ -101,6 +99,8 @@ input, textarea{
 .addServiceButton{
     border: none;
     padding: 5px;
+    background-color: #50C0FF;
+    border-radius: 10px;
 }
 
 .bottom{
@@ -130,11 +130,15 @@ input, textarea{
 .buttonSubmit{
     background-color: #50C0FF;
     border: none;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .buttonReset{
-    color: red;
+    color: #FD0050;
     background-color: inherit;
     border: none;
+    padding: 10px;
+    border-radius: 10px;
 }
 
